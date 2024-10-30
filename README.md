@@ -1,3 +1,1 @@
-# PERN_backend
-# PERN-STACK-1
 # PERN-STACK-1

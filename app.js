@@ -24,6 +24,13 @@ app.use('*', (req, res, next)=>{
     })
 })
 
+app.use((err, req, res, next)=>{
+    return res.status(404).json({
+        status: 'Fail',
+        message: err.message
+    })
+
+})
 const PORT = process.env.APP_PORT || 4000;
 
 app.listen(PORT, ()=>{
