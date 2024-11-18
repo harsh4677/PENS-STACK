@@ -6,15 +6,13 @@ const catchAsync = require('./utils/catchAsync');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controller/errorController');
 
-
-
 const app = express()
 app.use(express.json());
 
 
 //All routes wil be here 
 app.use('/api/v1/auth', authRouter)
-app.use('api/v1/projects', projectRouter)
+app.use('/api/v1/', projectRouter)
 
 app.use('*', 
     catchAsync( async(req, res, next)=>{
