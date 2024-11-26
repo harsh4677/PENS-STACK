@@ -9,7 +9,7 @@ router
     .get(authentication,  retrictTo('1'), getAllProject)
 
 router
-    .route('/:id')
+    .route('/projects/:id')
     .get(authentication, retrictTo('1'), getProjectById)
     .patch(authentication, retrictTo('1'), updateProject)
     .delete(authentication, retrictTo('1'), deleteProject);

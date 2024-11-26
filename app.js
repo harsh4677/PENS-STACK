@@ -6,7 +6,7 @@ const catchAsync = require('./utils/catchAsync');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controller/errorController');
 
-const app = express()
+const app = express();
 app.use(express.json());
 
 
@@ -24,4 +24,4 @@ const PORT = process.env.APP_PORT || 4000;
 
 app.listen(PORT, ()=>{
     console.log('Server is up and running', PORT)
-})
+}); 
