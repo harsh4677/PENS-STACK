@@ -1,5 +1,5 @@
 const catchAsync = require("../utils/catchAsync");
-const project = require('../db/models/project'); // Assuming you have a Project model
+const project = require('../db/models/project'); 
 const user = require("../db/models/user");
 const AppError = require("../utils/appError");
 
